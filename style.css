@@ -192,15 +192,17 @@ button:active {
 }
 
 #yippeeScreen {
-  text-align: center;
+  text-align: center; /* ensures bouquet + message centered */
   font-size: 32px;
 }
 
-/* Crisp ASCII bouquet */
+/* Centered ASCII bouquet */
 .flowers {
   font-size: 16px;
   margin-bottom: 20px;
   white-space: pre;
+  text-align: center; /* NEW */
+  display: inline-block; /* NEW */
 }
 
 /* Loading bar */
