@@ -192,7 +192,7 @@ button:active {
 }
 
 #yippeeScreen {
-  text-align: center; /* ensures bouquet + message centered */
+  text-align: center;
   font-size: 32px;
 }
 
@@ -201,8 +201,14 @@ button:active {
   font-size: 16px;
   margin-bottom: 20px;
   white-space: pre;
-  text-align: center; /* NEW */
-  display: inline-block; /* NEW */
+  text-align: center;
+  display: inline-block;
+}
+
+/* Ensure <pre> itself centers */
+pre {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Loading bar */
