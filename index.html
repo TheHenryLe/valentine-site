@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Valentine?</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Retro loading screen -->
+    <div id="loadingScreen" class="loading-screen">
+      <div class="loading-box">
+        <h2>Windows 98 Romance Edition</h2>
+        <p>Loading affection modules...</p>
+        <div class="loading-bar-outline">
+          <div id="loadingBarBoot" class="loading-bar-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Boot beep -->
+    <audio
+      id="bootBeep"
+      src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+    ></audio>
+
+    <!-- Pixel heart particle container -->
+    <canvas id="heartCanvas"></canvas>
+
+    <!-- Retro popup window -->
+    <div id="popup" class="popup hidden breathing">
+      <div class="popup-header">System Message</div>
+      <div class="popup-content">
+        <p>Will you be my Valentine?</p>
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+      </div>
+    </div>
+
+    <!-- Speech bubble -->
+    <div id="speechBubble" class="speech-bubble hidden"></div>
+
+    <!-- Yippee screen -->
+    <div id="yippeeScreen" class="hidden">
+      <!-- Animated ASCII bouquet -->
+      <pre id="bouquet" class="flowers"></pre>
+
+      <h1>YIPPEE!!! 🎉</h1>
+
+      <!-- Fake loading bar -->
+      <div id="loadingBarContainer">
+        <div id="loadingBar"></div>
+      </div>
+
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <!-- Fake blue screen overlay -->
+    <div id="blueScreen" class="blue-screen hidden">
+      <pre>
+A problem has been detected and Windows has been shut down to prevent damage
+to your computer.
+
+HEART_OVERFLOW
+
+If this is the first time you've seen this Stop error screen,
+restart your life. If this screen appears again, follow
+these steps:
+
+Tell them how you feel.
+
+Technical information:
+
+*** STOP: 0x0000LOVE (0x00000001, 0x00000002, 0x00000003, 0x00000004)
+</pre
+      >
+    </div>
+
+    <!-- Fake loading spinner -->
+    <div id="spinner" class="spinner"></div>
+
+    <!-- DOS-style terminal -->
+    <div id="terminal" class="terminal"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
